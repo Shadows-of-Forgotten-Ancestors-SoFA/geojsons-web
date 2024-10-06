@@ -78,9 +78,9 @@ export class MapComponent implements OnInit, OnDestroy {
   }
 
   private getColorByDensity(density: number): string {
-    if (density < 0.000032) return '#ff0000'; // Red
-    if (density < 0.000033) return '#ffcc00'; // Yellow
-    return '#00ff00'; // Green
+    if (density < 0.00009) return '#00ff00';
+    if (density < 0.0003) return '#ffcc00';
+    return '#ff0000';
   }
 
   ngOnDestroy(): void {
